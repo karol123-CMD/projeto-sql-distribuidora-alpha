@@ -44,13 +44,9 @@ projeto-sql-distribuidora-alpha/
 |   |-- 01_schema.sql
 |   |-- 02_seed_data.sql
 |   `-- 03_analysis_queries.sql
-|-- docs/
-|   `-- projeto-distribuidora-alpha.pdf
 `-- assets/
     `-- data-model.jpeg
 ```
-
-O [PDF original](docs/projeto-distribuidora-alpha.pdf) documenta o cenário, as funções operacionais e a modelagem conceitual. Ele inclui hipóteses de porte da empresa e possibilidades futuras, como logística e fornecedores, que não representam funcionalidades implementadas. Os 220 clientes e 95 produtos mencionados no cenário não são as quantidades da carga demonstrativa.
 
 ## Tecnologias
 
