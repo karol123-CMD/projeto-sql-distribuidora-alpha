@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1340" viewBox="0 0 1440 1340" role="img" aria-labelledby="title desc"><title id="title">Distribuidora Alpha: modelo relacional</title><desc id="desc">Dez tabelas e doze relacionamentos do schema SQLite. Exibe chaves primárias e estrangeiras. Outros atributos estão no schema SQL.</desc><rect width="1440" height="1340" fill="#f8fafc"/><style>text{font-family:Segoe UI,Arial,sans-serif;fill:#172b4d}.title{font-size:34px;font-weight:700}.sub{font-size:20px;fill:#52647c}.table{font-size:24px;font-weight:600;fill:white}.field{font-size:21px}.tag{font-size:16px;font-weight:700;fill:#176663}.cardinality{font-size:19px;font-weight:600;paint-order:stroke;stroke:#f8fafc;stroke-width:7px;stroke-linejoin:round}</style><text x="60" y="64" class="title">Distribuidora Alpha</text><text x="60" y="100" class="sub">Modelo relacional · SQLite · chaves e relacionamentos</text>
+<polyline points="220,290 220,400" fill="none" stroke="#71839a" stroke-width="2.5" stroke-linejoin="round"/><text x="235" y="315" class="cardinality">1</text><text x="235" y="385" class="cardinality">0..N</text>
+<polyline points="380,470 440,470 440,240 550,240" fill="none" stroke="#71839a" stroke-width="2.5" stroke-linejoin="round"/><text x="395" y="455" class="cardinality">1</text><text x="480" y="225" class="cardinality">0..1</text>
+<polyline points="380,520 550,520" fill="none" stroke="#71839a" stroke-width="2.5" stroke-linejoin="round"/><text x="395" y="505" class="cardinality">1</text><text x="485" y="505" class="cardinality">0..1</text>
+<polyline points="220,560 220,660" fill="none" stroke="#71839a" stroke-width="2.5" stroke-linejoin="round"/><text x="235" y="585" class="cardinality">1</text><text x="235" y="645" class="cardinality">0..1</text>
+<polyline points="710,320 710,400" fill="none" stroke="#71839a" stroke-width="2.5" stroke-linejoin="round"/><text x="725" y="345" class="cardinality">1</text><text x="725" y="385" class="cardinality">0..N</text>
+<polyline points="620,590 620,620 440,620 440,710 380,710" fill="none" stroke="#71839a" stroke-width="2.5" stroke-linejoin="round"/><text x="635" y="613" class="cardinality">1</text><text x="385" y="695" class="cardinality">0..N</text>
+<polyline points="760,590 760,660" fill="none" stroke="#71839a" stroke-width="2.5" stroke-linejoin="round"/><text x="775" y="614" class="cardinality">1</text><text x="775" y="645" class="cardinality">0..N</text>
+<polyline points="380,790 550,790" fill="none" stroke="#71839a" stroke-width="2.5" stroke-linejoin="round"/><text x="395" y="775" class="cardinality">1</text><text x="485" y="775" class="cardinality">0..N</text>
+<polyline points="1040,735 870,735" fill="none" stroke="#71839a" stroke-width="2.5" stroke-linejoin="round"/><text x="1010" y="720" class="cardinality">1</text><text x="880" y="720" class="cardinality">0..N</text>
+<polyline points="1200,290 1200,400" fill="none" stroke="#71839a" stroke-width="2.5" stroke-linejoin="round"/><text x="1215" y="315" class="cardinality">1</text><text x="1215" y="385" class="cardinality">0..N</text>
+<polyline points="1360,480 1400,480 1400,1110 870,1110" fill="none" stroke="#71839a" stroke-width="2.5" stroke-linejoin="round"/><text x="1370" y="465" class="cardinality">1</text><text x="885" y="1095" class="cardinality">0..N</text>
+<polyline points="710,880 710,1020" fill="none" stroke="#71839a" stroke-width="2.5" stroke-linejoin="round"/><text x="725" y="905" class="cardinality">1</text><text x="725" y="1005" class="cardinality">0..N</text>
+<rect x="60" y="160" width="320" height="130" rx="8" fill="white" stroke="#cbd5e1" stroke-width="1.5"/><path d="M 68 160 H 372 Q 380 160 380 168 V 212 H 60 V 168 Q 60 160 68 160" fill="#173d59"/><text x="78" y="195" class="table">cidade</text>
+<text x="78" y="245" class="field">id_cidade</text><text x="362" y="245" text-anchor="end" class="tag">PK</text>
+<rect x="60" y="400" width="320" height="160" rx="8" fill="white" stroke="#cbd5e1" stroke-width="1.5"/><path d="M 68 400 H 372 Q 380 400 380 408 V 452 H 60 V 408 Q 60 400 68 400" fill="#173d59"/><text x="78" y="435" class="table">endereco</text>
+<text x="78" y="485" class="field">id_endereco</text><text x="362" y="485" text-anchor="end" class="tag">PK</text>
+<text x="78" y="519" class="field">id_cidade</text><text x="362" y="519" text-anchor="end" class="tag">FK</text>
+<rect x="550" y="160" width="320" height="160" rx="8" fill="white" stroke="#cbd5e1" stroke-width="1.5"/><path d="M 558 160 H 862 Q 870 160 870 168 V 212 H 550 V 168 Q 550 160 558 160" fill="#173d59"/><text x="568" y="195" class="table">supervisor</text>
+<text x="568" y="245" class="field">id_supervisor</text><text x="852" y="245" text-anchor="end" class="tag">PK</text>
+<text x="568" y="279" class="field">id_endereco</text><text x="852" y="279" text-anchor="end" class="tag">FK · UQ</text>
+<rect x="550" y="400" width="320" height="190" rx="8" fill="white" stroke="#cbd5e1" stroke-width="1.5"/><path d="M 558 400 H 862 Q 870 400 870 408 V 452 H 550 V 408 Q 550 400 558 400" fill="#173d59"/><text x="568" y="435" class="table">vendedor</text>
+<text x="568" y="485" class="field">id_vendedor</text><text x="852" y="485" text-anchor="end" class="tag">PK</text>
+<text x="568" y="519" class="field">id_endereco</text><text x="852" y="519" text-anchor="end" class="tag">FK · UQ</text>
+<text x="568" y="553" class="field">id_supervisor</text><text x="852" y="553" text-anchor="end" class="tag">FK</text>
+<rect x="60" y="660" width="320" height="190" rx="8" fill="white" stroke="#cbd5e1" stroke-width="1.5"/><path d="M 68 660 H 372 Q 380 660 380 668 V 712 H 60 V 668 Q 60 660 68 660" fill="#173d59"/><text x="78" y="695" class="table">cliente</text>
+<text x="78" y="745" class="field">id_cliente</text><text x="362" y="745" text-anchor="end" class="tag">PK</text>
+<text x="78" y="779" class="field">id_endereco</text><text x="362" y="779" text-anchor="end" class="tag">FK · UQ</text>
+<text x="78" y="813" class="field">id_vendedor</text><text x="362" y="813" text-anchor="end" class="tag">FK</text>
+<rect x="550" y="660" width="320" height="220" rx="8" fill="white" stroke="#cbd5e1" stroke-width="1.5"/><path d="M 558 660 H 862 Q 870 660 870 668 V 712 H 550 V 668 Q 550 660 558 660" fill="#173d59"/><text x="568" y="695" class="table">pedido</text>
+<text x="568" y="745" class="field">id_pedido</text><text x="852" y="745" text-anchor="end" class="tag">PK</text>
+<text x="568" y="779" class="field">id_cliente</text><text x="852" y="779" text-anchor="end" class="tag">FK</text>
+<text x="568" y="813" class="field">id_vendedor</text><text x="852" y="813" text-anchor="end" class="tag">FK</text>
+<text x="568" y="847" class="field">id_forma_pagamento</text><text x="852" y="847" text-anchor="end" class="tag">FK</text>
+<rect x="1040" y="660" width="320" height="130" rx="8" fill="white" stroke="#cbd5e1" stroke-width="1.5"/><path d="M 1048 660 H 1352 Q 1360 660 1360 668 V 712 H 1040 V 668 Q 1040 660 1048 660" fill="#173d59"/><text x="1058" y="695" class="table">forma_de_pagamento</text>
+<text x="1058" y="745" class="field">id_forma_pagamento</text><text x="1342" y="745" text-anchor="end" class="tag">PK</text>
+<rect x="1040" y="160" width="320" height="130" rx="8" fill="white" stroke="#cbd5e1" stroke-width="1.5"/><path d="M 1048 160 H 1352 Q 1360 160 1360 168 V 212 H 1040 V 168 Q 1040 160 1048 160" fill="#173d59"/><text x="1058" y="195" class="table">categoria</text>
+<text x="1058" y="245" class="field">id_categoria</text><text x="1342" y="245" text-anchor="end" class="tag">PK</text>
+<rect x="1040" y="400" width="320" height="160" rx="8" fill="white" stroke="#cbd5e1" stroke-width="1.5"/><path d="M 1048 400 H 1352 Q 1360 400 1360 408 V 452 H 1040 V 408 Q 1040 400 1048 400" fill="#173d59"/><text x="1058" y="435" class="table">produto</text>
+<text x="1058" y="485" class="field">id_produto</text><text x="1342" y="485" text-anchor="end" class="tag">PK</text>
+<text x="1058" y="519" class="field">id_categoria</text><text x="1342" y="519" text-anchor="end" class="tag">FK</text>
+<rect x="550" y="1020" width="320" height="190" rx="8" fill="white" stroke="#cbd5e1" stroke-width="1.5"/><path d="M 558 1020 H 862 Q 870 1020 870 1028 V 1072 H 550 V 1028 Q 550 1020 558 1020" fill="#173d59"/><text x="568" y="1055" class="table">item_pedido</text>
+<text x="568" y="1105" class="field">id_item_pedido</text><text x="852" y="1105" text-anchor="end" class="tag">PK</text>
+<text x="568" y="1139" class="field">id_pedido</text><text x="852" y="1139" text-anchor="end" class="tag">FK</text>
+<text x="568" y="1173" class="field">id_produto</text><text x="852" y="1173" text-anchor="end" class="tag">FK</text>
+<text x="60" y="940" class="sub">PK: chave primária</text><text x="60" y="976" class="sub">FK: chave estrangeira</text><text x="60" y="1012" class="sub">UQ: vínculo único na tabela</text><text x="60" y="1258" class="sub">Cada registro filho referencia exatamente um pai. Um pai pode ter zero ou vários filhos (0..N).</text><text x="60" y="1292" class="sub">Nos vínculos únicos com endereço, o máximo é um filho por tabela (0..1). Demais atributos: sql/01_schema.sql.</text></svg>
