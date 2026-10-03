@@ -133,8 +133,8 @@ WHERE p.status_pedido = 'Faturado'
 GROUP BY s.id_supervisor, s.nome_supervisor
 ORDER BY valor_supervisor DESC;
 
--- Vendedor que mais vendeu
--- Esta consulta organiza os vendedores em ordem descrecente de faturamento,
+-- Ranking de vendedores por faturamento
+-- Esta consulta organiza os vendedores em ordem decrescente de faturamento,
 -- permitindo identificar os destaques comerciais no período analisado.
 SELECT
     v.id_vendedor,
@@ -271,6 +271,7 @@ ORDER BY pedidos_cliente DESC;
 -- Frequência de compras por cliente
 -- Esta leitura reforça a análise de recorrência,
 -- ajudando a identificar clientes mais ativos.
+-- O identificador mantém separados clientes com o mesmo nome fantasia.
 SELECT
     c.nome_fantasia,
     COUNT(p.id_pedido) AS frequencia_compra
@@ -278,7 +279,7 @@ FROM cliente c
 JOIN pedido p
     ON c.id_cliente = p.id_cliente
 WHERE p.status_pedido = 'Faturado'
-GROUP BY c.nome_fantasia
+GROUP BY c.id_cliente, c.nome_fantasia
 ORDER BY frequencia_compra DESC;
 
 -- Clientes inativos pelo status cadastral
@@ -449,7 +450,7 @@ WHERE p.status_pedido = 'Faturado'
 GROUP BY c.nome_categoria
 ORDER BY faturamento_categoria DESC;
 
--- Marcas mais vendidas
+-- Marcas com maior faturamento
 -- Nesta consulta, a análise é feita diretamente por marca,
 -- sem necessidade de passar pela categoria.
 SELECT
